@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react'
+import React, {useEffect} from 'react';
 import {v4 as uuidv4} from "uuid";
+import '../input.css';
 
 const Form = ({input, setInput, todos, setTodos, editTodo, setEditTodo}) => {
     useEffect(() => {
@@ -36,12 +37,12 @@ const Form = ({input, setInput, todos, setTodos, editTodo, setEditTodo}) => {
         <form onSubmit={onFormSubmit}>
             <input 
             type="text" 
-            placeholder="Enter a Todo..." 
-            className="task-input"
+            placeholder="Enter a TODO..." 
+            className="w-60 p-2 mr-5 text-base color-[#ccc] bg-[#000000] rounded-md border-2  border-[#c89666] text-white"
             value={input}
             required
             onChange={onInputChange}/>
-            <button className="button-add" type="submit">
+            <button className="w-20 px-5 py-2 text-lg text-white bg-[#f1af71] rounded-md border-2 cursor-pointer" type="submit">
                 {editTodo ? "OK" : "Add"}
             </button>
         </form>

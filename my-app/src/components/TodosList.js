@@ -1,4 +1,5 @@
 import React from 'react'
+import '../input.css'
 
 const TodosList = ({todos, setTodos, setEditTodo}) => {
     const handleComplete = (todo) => {
@@ -22,23 +23,23 @@ const TodosList = ({todos, setTodos, setEditTodo}) => {
     return (
         <div>
             {todos.map((todo) => (
-                <li className="list-item" key={todo.id}>
+                <li className="flex mt-3 p-2 max-h-15 border-2 rounded-xl" key={todo.id}>
                     <input 
                     type="text" 
                     value={todo.title} 
-                    className={`list ${todo.completed ? "complete" : ""}`} 
+                    className={`w-30 mr-2 pl-2 bg-[#12343b] text-white text-base border-0 ${todo.completed ? "complete" : ""}`} 
                     onChange={(event) => event.preventDefault()} 
                     />
                     <div>
-                        <button className="button-complete task-button"
+                        <button className="border-0 outline-0 cursor-pointer bg-[#FDBB4B] text-3xl w-10 rounded-md m-0"
                         onClick={() => handleComplete(todo)}>
                             <i className="fa fa-check-circle"></i>
                         </button>
-                        <button className="button-edit task-button"
+                        <button className="border-0 outline-0 cursor-pointer bg-[#FDBB4B] text-3xl w-10 rounded-md m-2"
                         onClick={() => handleEdit(todo)}>
                             <i className="fa fa-edit"></i>
                         </button>
-                        <button className="button-delete task-button"
+                        <button className="border-0 outline-0 cursor-pointer bg-[#FDBB4B] text-3xl w-10 rounded-md m-0"
                         onClick={() => handleDelete(todo)}>
                             <i className="fa fa-trash"></i>
                         </button>

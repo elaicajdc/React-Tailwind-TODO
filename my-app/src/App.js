@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import TodosList from './components/TodosList';
-import './App.css';
 
 const App = () => {
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
@@ -14,8 +13,8 @@ const App = () => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
   return (
-  <div className="container">
-    <div className="app-wrapper">
+  <div className="w-full min-h-screen flex justify-center content-center">
+    <div className="bg-[#12343b] min-w-full min-h-full p-4 box-border rounded-md">
       <div>
         <Header />
       </div>
