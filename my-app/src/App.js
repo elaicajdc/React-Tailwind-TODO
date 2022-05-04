@@ -7,7 +7,7 @@ import './App.css';
 const App = () => {
   const initialState = JSON.parse(localStorage.getItem("todos")) || [];
   const [input, setInput] = useState("");
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(initialState);
   const [editTodo, setEditTodo] = useState(null);
 
   useEffect(() => {
