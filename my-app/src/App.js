@@ -16,7 +16,7 @@ const App = () => {
   return (
   <div className="w-screen min-h-screen flex-bottom justify-center content-center">
       <div>
-        <Stats />
+        <Stats todos={todos}/>
       </div>
       <div>
         <Header />

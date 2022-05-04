@@ -2,6 +2,7 @@ import React from 'react'
 import '../input.css'
 
 const Header = () => {
+    
     return (
         <div className="bg-color-pattern min-w-full h-72 p-4 box-border mb-16 bg-cover">
             <div className="isolate font-mono text-3xl font-bold text-left text-white mt-20">
