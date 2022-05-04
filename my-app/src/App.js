@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
+import Stats from './components/Stats';
 import TodosList from './components/TodosList';
 
 const App = () => {
@@ -14,11 +15,12 @@ const App = () => {
   }, [todos]);
   return (
   <div className="w-screen min-h-screen flex-bottom justify-center content-center">
-    <div className="bg-color-pattern min-w-full h-60 p-4 box-border">
+      <div>
+        <Stats />
+      </div>
       <div>
         <Header />
       </div>
-    </div>
     <div className="bg-[#ffff] min-w-full h-full p-4 box-border">
       <div>
         <Form 
