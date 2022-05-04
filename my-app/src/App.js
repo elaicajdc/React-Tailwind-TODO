@@ -13,11 +13,13 @@ const App = () => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
   return (
-  <div className="w-full min-h-screen flex justify-center content-center">
-    <div className="bg-[#12343b] min-w-full min-h-full p-4 box-border rounded-md">
+  <div className="w-screen min-h-screen flex-bottom justify-center content-center">
+    <div className="bg-color-pattern min-w-full h-60 p-4 box-border">
       <div>
         <Header />
       </div>
+    </div>
+    <div className="bg-[#ffff] min-w-full h-full p-4 box-border">
       <div>
         <Form 
         input={input}

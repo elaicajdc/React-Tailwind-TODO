@@ -38,11 +38,11 @@ const Form = ({input, setInput, todos, setTodos, editTodo, setEditTodo}) => {
             <input 
             type="text" 
             placeholder="Enter a TODO..." 
-            className="w-60 p-2 mr-5 text-base color-[#ccc] bg-[#000000] rounded-md border-2  border-[#c89666] text-white"
+            className="w-60 p-2 mr-5 text-base color-[#ccc] bg-white rounded-md border-2  border-[#c89666] text-[#252525]"
             value={input}
             required
             onChange={onInputChange}/>
-            <button className="w-20 px-5 py-2 text-lg text-white bg-[#f1af71] rounded-md border-2 cursor-pointer" type="submit">
+            <button className="w-20 px-5 py-2 text-lg text-white bg-[#FDBB4B] rounded-md cursor-pointer" type="submit">
                 {editTodo ? "OK" : "Add"}
             </button>
         </form>
