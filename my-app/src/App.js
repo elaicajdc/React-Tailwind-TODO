@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import TodosList from './components/TodosList';
-// import { todosdata } from './data';
 import './App.css';
 
 const App = () => {
@@ -10,21 +9,6 @@ const App = () => {
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState(initialState);
   const [editTodo, setEditTodo] = useState(null);
-
-  // useEffect(() => {
-  //   localStorage.setItem("todos", 
-  //   JSON.stringify(Object.assign(
-  //       todosdata.map((data) => {
-  //       const item = {
-  //           completed: data.completed,
-  //           id: data.id,
-  //           title: data.title,
-  //       };
-  //       return JSON.parse(item);
-  //     })
-  //   ))
-  //   );
-  // });
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
