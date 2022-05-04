@@ -10,7 +10,7 @@ const Header = () => {
                     <div className="col-span-3 text-2xl text-left">Wednesday</div>
                     <div className="row-span-2 col-span-3 text-base text-left">April, 2022</div>
                 </div>
-                <div className="text-left text-3xl ml-4">TO DO List</div>
+                <div className="text-left text-3xl ml-4">TODO List</div>
             </div>
         </div>
     );

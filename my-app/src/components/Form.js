@@ -37,8 +37,8 @@ const Form = ({input, setInput, todos, setTodos, editTodo, setEditTodo}) => {
         <form onSubmit={onFormSubmit}>
             <input 
             type="text" 
-            placeholder="Enter a TODO..." 
-            className="w-60 p-2 mr-5 text-base color-[#ccc] bg-white rounded-md border-2  border-[#c89666] text-[#252525]"
+            placeholder="Enter a TODO ..." 
+            className="w-[16.5rem] p-2 pl-4 mr-3 text-base color-[#ccc] bg-white rounded-md border-2  border-[#c89666] text-[#252525]"
             value={input}
             required
             onChange={onInputChange}/>
