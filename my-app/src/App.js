@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import Stats from './components/Stats';
+import Nothing from './components/Nothing';
 import TodosList from './components/TodosList';
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
       <div>
         <TodosList todos={todos} setTodos={setTodos} 
         setEditTodo={setEditTodo}/>
+        <Nothing todos={todos} />
       </div>
     </div>
   </div>

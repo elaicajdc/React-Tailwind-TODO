@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'color-pattern': "url('./img/art.jpg')",
+        'cat-nothing': "url('./img/cat.png')",
       }
     },
     fontFamily: {
